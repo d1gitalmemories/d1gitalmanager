@@ -8,3 +8,6 @@ You need a hosting service, I suggest https://bot-hosting.net/ with cheap prices
 You need A DOMAIN with SSL certificate. (Roblox OAuth2 App Requirement to do so)
 Then, change all URLs (auth.d1gitalmemories.fun) to yours.
 Change PORT at the end of the code with yours.
+
+See it in action here:
+https://discord.gg/bvPb4tB869
