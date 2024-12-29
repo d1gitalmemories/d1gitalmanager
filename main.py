@@ -132,7 +132,7 @@ async def on_member_remove(member):
         print(f"User {discord_id} was verified and has been removed from the database.")
 
 def is_vpn(ip_address):
-    API_key = "d97f9a3357c3472e8481eaec3ea186dd"  # API key (you can change it with yours )
+    API_key = ""  # API key (you can change it with yours )
     response = requests.get(f"https://vpnapi.io/api/{ip_address}?key={API_key}")
     data = json.loads(response.text)
     return data["security"]["vpn"]
