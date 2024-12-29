@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+      <title>d1gitalmemories auth</title>
+      <!-- Link to External CSS -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+   </head>
+   <body>
+      <header class="header">
+         <a href="https://d1gitalmemories.fun" class="logo-link">
+         <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo" class="logo">
+         </a>
+         <span class="brand-text">d1gitalmemories</span>
+      </header>
+      <div class="container">
+         {% if success %}
+         <!-- Success Symbol -->
+         <svg id="successSymbol" class="status-symbol success" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+         </svg>
+         {% else %}
+         <!-- Error Symbol -->
+         <svg id="errorSymbol" class="status-symbol error" viewBox="0 0 24 24">
+            <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/>
+         </svg>
+         {% endif %}
+         <!-- Main Message -->
+         <h1>{{ message }}</h1>
+         <!-- Custom Message -->
+         <p>{{ custom_message }}</p>
+      </div>
+   </body>
+</html>

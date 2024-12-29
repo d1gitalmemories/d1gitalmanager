@@ -1,0 +1,9 @@
+{
+    "token": "token",
+    "clientID": RobloxClientIDHere,
+    "secret": "RobloxSecretHere",
+    "redirecturl": "https://your-api-callback-here.com/oauth/callback",
+    "memberRoleID": verifiedRoleID,
+    "flask-key": "RandomFlaskKeyHere",
+    "guildID": guildIDHere
+}

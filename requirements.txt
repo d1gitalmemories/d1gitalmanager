@@ -1,0 +1,6 @@
+discord
+flask
+requests
+asyncio
+flask-limiter
+waitress
